@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <h1 id='demo'>Html DOM events</h1>
+<h2>the onclick event</h2>
+<p>the onclick event triggers a function when a element is clicked on.</p>
+<p>click to trigger a function that will output "Hello World":</p>
+<form action="" id="form">
+    <input type="text" name="" id="value">
+    <input type="submit" value="submit">
+</form>
+<button onclick="document.getElementById('demo').innerText =document.getElementById('value').value">Click Me</button>
+
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+    }
+    let a=5;
+    let b=5;
+    let c=10;
+    let y=a+b+c;
+
+     document.getElementById("demo").innerHTML =y;
+              
+</script>
+</body>
+</html>
